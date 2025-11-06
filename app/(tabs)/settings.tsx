@@ -1,10 +1,11 @@
 import { createSettingsStyles } from "@/assets/styles/settings.style";
+import Dangerzone from "@/components/Dangerzone";
 import Preferences from "@/components/Preferences";
 import ProgressStats from "@/components/ProgressStats";
 import useTheme from "@/hooks/useTheme";
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
-import React, { useState } from "react";
+import React from "react";
 import { ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -36,9 +37,14 @@ const SettingScreen = () => {
           contentContainerStyle={settingsStyles.content}
           showsVerticalScrollIndicator={false}
         >
+          {/* PROGRESS STATS */}
           <ProgressStats />
+
           {/* PREFERENCES */}
           <Preferences />
+
+          {/* DANGER ZONE */}
+          <Dangerzone />
         </ScrollView>
       </SafeAreaView>
     </LinearGradient>
