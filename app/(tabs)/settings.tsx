@@ -9,9 +9,6 @@ import { ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const SettingScreen = () => {
-  const [isAutoSync, setisAutoSync] = useState(true);
-  const [isNotificationEnabled, setisNotificationEnabled] = useState(true);
-
   const { colors, isDarkMode, toggleDarkMode } = useTheme();
 
   const settingsStyles = createSettingsStyles(colors);
