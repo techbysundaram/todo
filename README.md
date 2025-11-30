@@ -49,6 +49,21 @@ The app follows a modular architecture with clear separation between layers:
 - Built with **Convex functions** to handle business logic (task creation, updates, deletion, etc.).
 - Real-time database for task updates across devices.
 
+
+
+## Screenshots
+
+<img src="https://github.com/user-attachments/assets/d1d0f42b-724d-4ab4-9aa9-0d8003f0b95f" alt="Screenshot 1" width="300" />
+<img src="https://github.com/user-attachments/assets/0843f29d-6ab7-43ca-a839-c4d64831aaca" alt="Screenshot 2" width="300" />
+<img src="https://github.com/user-attachments/assets/c7cc4732-9170-471f-9ea2-526abef3e187" alt="Screenshot 3" width="300" />
+<img src="https://github.com/user-attachments/assets/bb78663b-edb3-4edd-b189-393fbca72f12" alt="Screenshot 4" width="300" />
+<img src="https://github.com/user-attachments/assets/1eeb1604-1332-465f-aa0a-fcece7911433" alt="Screenshot 5" width="300" />
+
+
+
+
+
+
 ---
 
 ## Installation
