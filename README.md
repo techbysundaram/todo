@@ -1,50 +1,124 @@
-# Welcome to your Expo app 👋
+# Todo Application (In Development)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **Todo Application** built with **React Native** and **Expo**, designed to provide a seamless task management experience. This project is currently **under active development**.
 
-## Get started
+---
 
-1. Install dependencies
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Status](#project-status)
+- [Contributing](#contributing)
+- [License](#license)
+- [Repository](#repository)
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## Features
+- Create, read, update, and delete tasks (CRUD operations)
+- Tab-based navigation for different task categories
+- Scrollable task lists for better UX
+- Responsive UI optimized for mobile devices
+- Backend integration using **Convex** for real-time updates and serverless functions
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## Tech Stack
+- **Frontend:** React Native with Expo
+- **Navigation:** React Navigation (Stack & Tab navigation)
+- **Backend:** Convex (Serverless backend functions and database)
+- **UI Components:** FlatList, ScrollView
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Architecture
+The app follows a modular architecture with clear separation between layers:
 
-## Get a fresh project
+### 1. UI Layer
+- Implements screens, components, and navigation.
+- Uses `FlatList` and `ScrollView` for efficient rendering of task lists.
 
-When you're ready, run:
+### 2. State & Data Layer
+- Manages local state and handles API calls to the backend.
+- Real-time data sync using **Convex** client.
+
+### 3. Backend Layer
+- Built with **Convex functions** to handle business logic (task creation, updates, deletion, etc.).
+- Real-time database for task updates across devices.
+
+---
+
+## Installation
+Clone the repository and install dependencies:
 
 ```bash
-npm run reset-project
+# Using npm
+git clone https://github.com/techbysundaram/todo.git
+cd todo
+npm install
+
+# Or using yarn
+git clone https://github.com/techbysundaram/todo.git
+cd todo
+yarn install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+## Usage
 
-To learn more about developing your project with Expo, look at the following resources:
+### Start the application using Expo:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+- The app will run on a simulator or a physical device via the Expo Go app.
 
-Join our community of developers creating universal apps.
+- Navigate through tabs to manage your tasks.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Project Status
+
+- Active development in progress.
+
+- Core features such as CRUD operations and tab navigation are implemented.
+
+- Upcoming features:
+
+  - Task prioritization and categorization
+
+  - Notifications and reminders
+
+  - Offline-first support
+
+## Contributing
+
+Contributions are welcome! Follow these steps:
+
+- 1. Fork the repository
+
+- 2. Create a new branch:
+
+```bash
+git checkout -b feature-name
+```
+
+- 3. Make your changes and commit:
+
+```bash
+git commit -m 'Add feature'
+```
+
+- 4. Push to the branch:
+
+```bash
+git push origin feature-name
+```
+
+- 5. Create a Pull Request
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
